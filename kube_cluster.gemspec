@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-require_relative "lib/gem_kit/version"
+require_relative "lib/kube_cluster/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "<%= gem_name %>"
-  spec.version = GemKit::VERSION
-  spec.authors = [<%= authors.map { |a| %("#{a}") }.join(", ") %>]
-  spec.email = [<%= emails.map { |e| %("#{e}") }.join(", ") %>]
+  spec.name = "kube_cluster"
+  spec.version = KubeCluster::VERSION
+  spec.authors = ["Nathan K"]
+  spec.email = ["nathankidd@hey.com"]
 
-  spec.summary = "<%= summary %>"
+  spec.summary = "Ruby-native Kubernetes"
 
   spec.description = <<~DESC
-    <%= description %>
+    OOP abstraction that allows you to deploy and manage kubernetes resources using Ruby.
   DESC
 
-  spec.homepage = "<%= homepage %>"
-  spec.license = "<%= license %>"
-  spec.required_ruby_version = ">= <%= ruby_version %>"
+  spec.homepage = "https://github.com/general-intelligence-systems/kube_cluster"
+  spec.license = "Apache-2.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
