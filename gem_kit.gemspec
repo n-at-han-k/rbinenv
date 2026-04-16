@@ -1,22 +1,22 @@
 # frozen_string_literal: true
 
-require_relative "lib/kube_cluster/version"
+require_relative "lib/gem_kit/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "<%= gem_name %>"
-  spec.version = KubeCluster::VERSION
-  spec.authors = [<%= authors.map { |a| %("#{a}") }.join(", ") %>]
-  spec.email = [<%= emails.map { |e| %("#{e}") }.join(", ") %>]
+  spec.name = "gem_kit"
+  spec.version = GemKit::VERSION
+  spec.authors = ["Nathan K"]
+  spec.email = ["nathankidd@hey.com"]
 
-  spec.summary = "<%= summary %>"
+  spec.summary = "Dynamic gem template"
 
   spec.description = <<~DESC
-    <%= description %>
+    Clone the repo and run bin/rename-gem and you have a gem.
   DESC
 
-  spec.homepage = "<%= homepage %>"
-  spec.license = "<%= license %>"
-  spec.required_ruby_version = ">= <%= ruby_version %>"
+  spec.homepage = "https://github.com/n-at-han-k/gem-kit"
+  spec.license = "MIT"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
