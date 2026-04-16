@@ -1,21 +1,21 @@
 # frozen_string_literal: true
 
-require_relative "lib/gem_kit/version"
+require_relative "lib/rbinenv/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "gem_kit"
-  spec.version = GemKit::VERSION
+  spec.name = "rbinenv"
+  spec.version = Rbinenv::VERSION
   spec.authors = ["Nathan K"]
   spec.email = ["nathankidd@hey.com"]
 
-  spec.summary = "Dynamic gem template"
+  spec.summary = "binenv with ruby gems"
 
   spec.description = <<~DESC
-    Clone the repo and run bin/rename-gem and you have a gem.
+    Install binenv with rubygems and utilize in your projects. Used by kube_cluster, and kube_schema gems.
   DESC
 
-  spec.homepage = "https://github.com/n-at-han-k/gem-kit"
-  spec.license = "MIT"
+  spec.homepage = "https://github.com/n-at-han-k/rbinenv"
+  spec.license = "Apache-2.0"
   spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
