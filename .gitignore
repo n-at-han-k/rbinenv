@@ -1,4 +1,6 @@
 *.gem
+/.direnv
+/node_modules
 /.bundle/
 /coverage/
 /pkg/
