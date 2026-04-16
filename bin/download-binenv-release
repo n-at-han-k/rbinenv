@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -x
+
+TARGET_DIR="./exe/bin"
+BASE_URL="https://github.com/devops-works/binenv/releases/download/v0.21.1"
+
+rm -rf exe/bin/*
+
+FILES=(
+  "binenv_darwin_amd64"
+  "binenv_darwin_arm64"
+  "binenv_freebsd_386"
+  "binenv_freebsd_amd64"
+  "binenv_freebsd_arm64"
+  "binenv_linux_386"
+  "binenv_linux_amd64"
+  "binenv_linux_arm64"
+  "binenv_openbsd_386"
+  "binenv_openbsd_amd64"
+  "binenv_openbsd_arm64"
+)
+
+for FILE in "${FILES[@]}"; do
+  wget -q -P "$TARGET_DIR" "$BASE_URL/$FILE"
+done
+
