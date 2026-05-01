@@ -1,5 +1,7 @@
 # rbinenv
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/n-at-han-k/rbinenv)
+
 A template for creating Ruby gems.
 
 ## Usage
